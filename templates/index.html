@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <title>Модель поиска предложений </title>
+</head>
+<body >
+    <div class="container">
+        <span class="title">Алгоритм для поиска предложенных скидок</span>
+        <div class="form-container">
+            <form method="POST">
+    
+                <textarea type="text" class="textarea" name="phrase" placeholder="Введите фразу"  oninput="auto_grow(this)"></textarea>
+                <input type="submit" class="form__submit" value="Проверить фразу">
+            </form>
+        </div>
+        <span id="result"></span>
+        
+
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>

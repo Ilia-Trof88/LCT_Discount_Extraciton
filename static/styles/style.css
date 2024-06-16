@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans-VariableFont.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+:root {
+    --color-input-focus: #2f82f0a8;
+    --color-form-submit-bg: #0fa134;
+    --color-form-submit-outline: #202020;
+}
+
+body {
+    background-image: url("фон.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 100px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: "OpenSans";
+}
+
+.form-container {
+    margin: 100px 10px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.textarea {
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 6px 10px;
+    outline: none;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+
+}
+
+.form__input:focus {
+    border: 2px solid var(--color-input-focus);
+}
+
+.form__submit {
+    padding: 8px 15px;
+    font-family: "OpenSans";
+    margin: 5px;
+    font-size: 15px;
+    background-color: var(--color-form-submit-bg);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.form__submit:hover {
+    outline: 1px solid var(--color-form-submit-outline);
+    color: var(--color-form-submit-outline);
+    background-color: white;
+
+}
+
+.default-text {
+    font-family: "Roboto";
+    font-size: 20px;
+    margin: 50px;
+}
+
+.image-container {
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+#result {
+    font-family: "OpenSans";
+    font-size: 25px;
+}
